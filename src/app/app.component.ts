@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-  title = 'test-ecommerce-site';
+  title = 'art-ecommerce-site';
 
   ngOnInit(): void {
     const body = document.getElementsByTagName('body')[0];

@@ -1,7 +1,7 @@
 import { ScullyConfig } from '@scullyio/scully';
 export const config: ScullyConfig = {
   projectRoot: "./src",
-  projectName: "test-ecommerce-site",
+  projectName: "art-ecommerce-site",
   outDir: './dist/static',
   routes: {
     '/products/:productId': {
