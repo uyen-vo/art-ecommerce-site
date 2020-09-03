@@ -1,0 +1,36 @@
+<div *ngIf="type !== 'horizontal'" class="card main-page">
+    <div class="card-image">
+        <a [routerLink]="['/products/' + product.id]">
+            <img [src]="product.image" />
+        </a>
+    </div>
+    <p class="name">{{ product.name }}</p>
+    <p>${{ product.price }}.00</p>
+</div>
+<div *ngIf="type === 'horizontal'" class="card product-page horizontal">
+    <div class="card-image">
+        <img class="materialboxed" [src]="product.image" />
+    </div>
+    <div class="description">
+        <p class="name">{{ product.name }}</p>
+        <p>${{ product.price }}.00</p>
+        <p class="quote" *ngIf="product.hasOwnProperty('quote')">{{ product.quote }}</p>
+        <p>{{ product.description }}</p>
+        <div>
+            <!-- <a [routerLink]="['/products/' + product.id]" *ngIf="!showBuyButton">
+                View product
+            </a> -->
+            <button class="snipcart-add-item"
+                *ngIf="showBuyButton"
+                data-item-has-taxes-included="true"
+                data-item-url="../assets/products.json"
+                [attr.data-item-price]="product.price"
+                [attr.data-item-image]="product.image"
+                [attr.data-item-name]="product.name"
+                [attr.data-item-description]="product.description"
+                [attr.data-item-id]="product.id">
+                Add to cart
+            </button>
+        </div>
+    </div>
+</div>

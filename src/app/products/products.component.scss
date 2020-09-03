@@ -1,0 +1,35 @@
+@import "../../styles.scss";
+
+.products-list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+
+    @media (max-width: $breakpoint-tablet) {
+        margin-top: 30px;
+    }
+
+    &__item {
+        padding: 20px;
+        width: 100%;
+
+        @media (min-width: $breakpoint-tablet) {
+            width: 50%;
+        }
+
+        @media (min-width: $breakpoint-desktop) {
+            width: 33%;
+        }
+    }
+}
+
+p {
+    text-align: center;
+}
+.quote {
+    color: $dark-blue;
+    margin-top: 40px;
+    @media (max-width: $breakpoint-tablet) {
+        margin-top: 85px;
+    }
+}

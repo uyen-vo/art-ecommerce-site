@@ -1,0 +1,16 @@
+<app-layout [title]="product.name" *ngIf="product">
+  <div class="actions">
+      <a [routerLink]="['/']" class="actions__link">home</a>
+      <span class="actions__separator">➡</span>
+      <span>"{{ product.name }}"</span>
+  </div>
+  <div class="hide-on-small-only">
+      <app-product-card [showBuyButton]="true" type="horizontal" [product]="product">
+      </app-product-card>
+  </div>
+
+  <div class="hide-on-med-and-up">
+    <app-product-card [showBuyButton]="true" [product]="product">
+    </app-product-card>
+</div>
+</app-layout>

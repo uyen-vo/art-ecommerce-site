@@ -1,0 +1,88 @@
+@import "../../styles.scss";
+.layout {
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+
+}
+.layout {
+  &__content {
+      flex:1;
+  }
+  &__footer {
+      text-align: center;
+  }
+}
+
+.navigation a {
+  color: $dull-grey;
+  font-size: 20px;
+  // border:1px solid blue;
+  font-family: 'Work Sans', sans-serif;
+}
+
+.navigation div {
+  // border: 1px solid red;
+}
+
+nav {
+  box-shadow:none;
+  background: white;
+}
+
+#logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 25px;
+}
+
+.cart {
+  float:right;
+  clear:right;
+}
+
+footer{
+  color:black;
+}
+
+
+
+//mobile
+
+#mobile-nav {
+  position: fixed;
+  top: 50px;
+  width: 100%;
+  transition: top 0.3s ease-in-out;
+  z-index: 1;
+  box-shadow: 0px 0px 15px -2px $dull-grey;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 60px;
+  padding-right:60px;
+  a {
+    color: $dull-grey;
+    font-family: 'Work Sans', sans-serif;
+    font-size:18px;
+  }
+
+  opacity: 0%;
+
+  @media (max-width: $breakpoint-tablet) {
+    opacity: 100%;
+  }
+}
+
+#logo-div{
+  @media (max-width: $breakpoint-tablet) {
+    position: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    top:0;
+    z-index:2;
+    width: 100%;
+    padding: 19.5px 0px 18px 0px;
+    background-color: white;
+  }
+}

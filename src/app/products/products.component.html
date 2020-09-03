@@ -1,0 +1,20 @@
+<app-layout>
+  <p class="quote">
+      "the privilege of art is to express exactly what you feel and to never lose that"
+  </p>
+
+  <p>
+      Archival quality glicee prints of original watercolor paintings.
+      <br> 
+      $5.00 flat rate shipping to continential U.S.A.
+      <br> 
+      Available in 5x5 of 5x7.
+  </p>
+
+  <div class="products-list">
+      <div *ngFor="let product of products$ | async" class="products-list__item">
+          <app-product-card  [product]="product">
+          </app-product-card>
+      </div>
+  </div>
+</app-layout>

@@ -1,0 +1,64 @@
+<div class="layout">
+  <nav>
+      <!-- <div class="nav-wrapper container">
+          <a [routerLink]="['/']" class="brand-logo">
+              #workfromhome
+          </a>
+          <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li>
+                  <a href="#" class="snipcart-checkout">
+                      View cart
+                  </a>
+              </li>
+          </ul>
+      </div> -->
+      <div class="nav-wrapper container">
+        <div class="navigation" fxLayoutAlign="center center" fxLayout="row" fxFlexFill>
+            <div fxFlex="15">
+                <a [routerLink]="['/about']" class="hide-on-small-only">
+                    about
+                </a>
+            </div>
+            <div fxFlex="15">
+                <a [routerLink]="['/']" class="hide-on-small-only">
+                    shop
+                </a>
+            </div>
+            <div fxFlex id="logo-div">
+                <a class="center-align" [routerLink]="['/']">
+                    <img id="logo" src="../../assets/logo-sekai-chan-art.svg"/>
+                </a>
+            </div>
+            <div fxFlex="30">
+                <a href="#" class="snipcart-checkout cart hide-on-small-only">
+                    cart (<span class="snipcart-items-count"></span>)
+                </a>
+            </div>
+        </div>
+    </div>
+  </nav>
+
+  <nav id="mobile-nav">
+    <a [routerLink]="['/about']">
+        about
+    </a>
+    <a [routerLink]="['/']">
+        shop
+    </a>
+    <a href="#" class="snipcart-checkout">
+        cart
+    </a>
+  </nav>
+  
+  <div class="container layout__content">
+      <main class="layout__content">
+          <ng-content></ng-content>
+      </main>
+  </div>
+  
+  <nav>
+      <footer class="nav-wrapper container layout__footer">
+          Copyright 2020 Sekai Chan Art
+      </footer>
+  </nav>
+</div>

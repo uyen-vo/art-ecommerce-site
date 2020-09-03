@@ -1,0 +1,30 @@
+[{
+  "url": "/assets/products.json",
+  "id": "desk-lamp",
+  "name": "last night",
+  "price": 15.00,
+  "image": "/assets/dreamy-abstract-watercolor-landscape-painting.jpg",
+  "quote":"We gon' see the future first,\nLivin' so the last night\nFeels like a past life...",
+  "description": "Perfect desk for the home, a standing desk has been proven to be a good way to stay in shape while working on a computer"
+}, {
+  "url": "/assets/products.json",
+  "id": "chair",
+  "name": "twilight",
+  "price": 15.00,
+  "image": "/assets/ocean-watercolor-landscape-painting.jpg",
+  "description": "Comfortable chair, working at home shouldn't mean hurting your back"
+}, {
+  "url": "/assets/products.json",
+  "id": "light",
+  "name": "Office light",
+  "price": 15.00,
+  "image": "/assets/abstract-watercolor-landscape-painting.jpg",
+  "description": "Nice looking office light, perfect for dark offices."
+}, {
+  "url": "/assets/products.json",
+  "id": "keyboard",
+  "name": "Ergonomic keyboard",
+  "price": 15.00,
+  "image": "/assets/winter-snow-watercolor-landscape-painting.jpg",
+  "description": "Laptop keyboards are good when you're travelling or working from a coffeeshop, but a real ergonomic keyboard will make working at home more comfortable, and more productive."
+}]
