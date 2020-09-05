@@ -6,10 +6,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit{
-  title = 'art-ecommerce-site';
+  numCart = 0;
 
   ngOnInit(): void {
-    const body = document.getElementsByTagName('body')[0];
-    body.classList.add('snipcart-overwrite');
+  }
+
+  onActivate(event) {
+    window.scroll(0,0);
+    this.numCart = Number(document.getElementsByClassName('snipcart-items-count')[0].textContent);
   }
 }

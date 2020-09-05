@@ -55,7 +55,6 @@ footer{
   top: 50px;
   width: 100%;
   transition: top 0.3s ease-in-out;
-  z-index: 1;
   box-shadow: 0px 0px 15px -2px $dull-grey;
   display: flex;
   justify-content: space-between;
@@ -68,9 +67,10 @@ footer{
   }
 
   opacity: 0%;
-
+  z-index: -1;
   @media (max-width: $breakpoint-tablet) {
     opacity: 100%;
+    z-index: 1;
   }
 }
 

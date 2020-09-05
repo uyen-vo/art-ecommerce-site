@@ -1,5 +1,4 @@
-<app-layout [title]="product.name" *ngIf="product">
-  <div class="actions">
+<div class="actions" *ngIf="product">
       <a [routerLink]="['/']" class="actions__link">home</a>
       <span class="actions__separator">➡</span>
       <span>"{{ product.name }}"</span>
@@ -13,4 +12,3 @@
     <app-product-card [showBuyButton]="true" [product]="product">
     </app-product-card>
 </div>
-</app-layout>

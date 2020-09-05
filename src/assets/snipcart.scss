@@ -3,19 +3,22 @@
   background-image: none;
 }
 
-.snipcart-overwrite .snipcart-cart-button {
+.snipcart-cart-button {
   background-color: black;
   color:white;
   font-family: 'Roboto Mono', sans-serif;
 }
 
 /* Background */
+.snipcart-modal, .snipcart-modal__container {
+  background-color: black;
+}
 .snipcart-layout__content {
-  background-color: blue;
+  background-color: black;
 }
 
 .snipcart-cart__content {
-  background-color: blue;
+  background-color: black;
 }
 
 /* Add a hover style the buttons */

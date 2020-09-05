@@ -13,6 +13,10 @@ export class ProductCardComponent implements OnInit {
   @Input() product: Product;
   @Input() type: 'horizontal' | 'vertical' = 'vertical';
   @Input() showBuyButton: boolean;
+  
+  // quantity = 1;
+  // size = '5x7';
+
 
   ngOnInit(): void {
     // document.addEventListener('DOMContentLoaded', function() {
@@ -21,5 +25,14 @@ export class ProductCardComponent implements OnInit {
     // });
   
   }
+
+  // onSizeSelected(value: string): void {
+  //   this.size = value;
+  // }
+
+  // onQuantitySelected(value: number): void {
+  //   this.quantity = value;
+  // }
+
 
 }
