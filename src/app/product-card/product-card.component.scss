@@ -7,23 +7,27 @@
 .main-page {
   box-shadow: none;
   margin:0;
+  p {
+    color: $dark-blue;
+  }
 
   &:hover {
     p {
-      color: $hot-pink;
-      transition: .3s ease-in;
+      color: black;
+      // transition: .3s ease-in;
     }
     
     .card-image {
-      box-shadow: 0px 0px 15px -2px $hot-pink;
-      transition: .4s ease-in;
+      border: 3px solid $hot-pink;
+      // box-shadow: 0px 0px 15px -2px $hot-pink;
+      transition: all .3s ease-in-out;
     }
   }
   
   .card-image {
-    // -webkit-box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    // box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.2);
-    box-shadow: 0px 0px 15px -2px $dull-grey;
+    box-shadow: none;
+    border: 3px solid transparent;;
+    // box-shadow: 0px 0px 15px -2px $dull-grey;
   }
 
   p {
@@ -38,7 +42,8 @@
 
 .product-page{
   .card-image {
-    padding-right:20px;
+    // padding-right:20px;
+    border: 1px solid red;
 
     img {
       border: 1px solid $dull-grey;
@@ -51,21 +56,100 @@
   }
 
   button {
-    position: absolute;
-    bottom: 0;
+    background-color: black;
+    border: 2px solid black;
+    width: 100%;
+    padding: 10px 0px;
+    color: white;
+    text-transform: uppercase;
+
+    &:hover {
+      background-color: $hot-pink;
+      border-color: $hot-pink;
+      transition: all .3s ease-in-out;
+    }
   }
 
   .quote {
     font-style: italic;
     white-space:pre-wrap;
   }
+
+  select {
+    border: 2px solid black;
+    width: 80px;
+    cursor: pointer;
+
+    &:hover {
+      border-color: $hot-pink;
+      transition: all .3s ease-out;
+    }
+  }
+
+  input {
+    width: 40px;
+    text-align: center;
+    height:38px;
+    border:none;
+    margin: 0;
+
+    &:focus {
+      box-shadow: none;
+    }
+
+    &:hover {
+      transition: all .3s ease-out;
+    }
+  }
+
+  .quantity-selector {
+    border: 2px solid black;
+    width: 80px;
+    text-align: center;
+
+    &:hover {
+      border-color: $hot-pink;
+      transition: all .3s ease-out;
+    }
+
+    span {
+      display:inline-block;
+      font-size: 20px;
+      cursor: pointer;
+      -webkit-user-select: none; /* Chrome/Safari */        
+      -moz-user-select: none; /* Firefox */
+      -ms-user-select: none; /* IE10+ */
+
+      &:hover {
+        color: $hot-pink;
+        transition: all .3s ease-out;
+      }
+    }
+  }
+
+  .selector-container {
+    display: flex;
+    margin-bottom: 10px;
+
+    .child:last-child {
+      margin-left: 15px;
+    }
+
+  }
 }
 
 
-#size {
-  border: 1px solid red;
-  position: absolute;
-  top:0;
-  z-axis: 10;
-  
+//gallery
+ngx-gallery >>> ngx-gallery-image .ngx-gallery-thumbnail.ngx-gallery-active {
+  border: 1px solid black;
+  z-axis: -1;
+}
+
+ngx-gallery >>> ngx-gallery-image .ngx-gallery-arrow {
+  color: black;
+  background-color: black;
+}
+
+ngx-gallery >>> ngx-gallery-image >>> ngx-gallery-bullets .ngx-gallery-bullet {
+  background: $dull-grey;
 }

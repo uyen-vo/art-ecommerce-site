@@ -1,14 +1,13 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&family=Work+Sans&display=swap');
-
 $dark-blue: #20528d;
-$hot-pink: #ff00ff;
+$hot-pink: fuchsia;
+//#ff00ff
 $dull-grey: #808080;
 
 $breakpoint-tablet: 768px;
 $breakpoint-desktop: 1200px;
 
 * {
-  font-family: 'Roboto Mono', sans-serif;
+  font-family: 'Roboto Mono', monospace;
 }

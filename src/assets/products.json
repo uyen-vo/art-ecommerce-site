@@ -1,58 +1,15 @@
 [{
   "url": "/assets/products.json",
-  "id": "last-night",
-  "name": "last night",
+  "id": "kaleido-2",
+  "name": "kaleidoscope 1",
   "price": 15.00,
-  "image": "/assets/dreamy-abstract-watercolor-landscape-painting.jpg",
-  "quote":"We gon' see the future first,\nLivin' so the last night\nFeels like a past life...",
+  "image": "/assets/kaleido-5.jpg",
   "description": "Perfect desk for the home, a standing desk has been proven to be a good way to stay in shape while working on a computer"
 }, {
   "url": "/assets/products.json",
-  "id": "twilight",
-  "name": "twilight",
+  "id": "kaleido-2",
+  "name": "kaleidoscope 2",
   "price": 15.00,
-  "image": "/assets/ocean-watercolor-landscape-painting.jpg",
-  "description": "Comfortable chair, working at home shouldn't mean hurting your back"
-}, {
-  "url": "/assets/products.json",
-  "id": "dawn",
-  "name": "dawn",
-  "price": 15.00,
-  "image": "/assets/abstract-watercolor-landscape-painting.jpg",
-  "description": "Nice looking office light, perfect for dark offices."
-}, {
-  "url": "/assets/products.json",
-  "id": "winter",
-  "name": "winter",
-  "price": 15.00,
-  "image": "/assets/winter-snow-watercolor-landscape-painting.jpg",
-  "description": "Laptop keyboards are good when you're travelling or working from a coffeeshop, but a real ergonomic keyboard will make working at home more comfortable, and more productive."
-}, {
-  "url": "/assets/products.json",
-  "id": "aurora",
-  "name": "aurora",
-  "price": 15.00,
-  "image": "/assets/aurora-watercolor-landscape-painting.jpg",
-  "description": "Nice looking office light, perfect for dark offices."
-}, {
-  "url": "/assets/products.json",
-  "id": "awaken",
-  "name": "awaken",
-  "price": 15.00,
-  "image": "/assets/portrait-watercolor-landscape-painting.jpg",
-  "description": "Nice looking office light, perfect for dark offices."
-}, {
-  "url": "/assets/products.json",
-  "id": "summer",
-  "name": "summer",
-  "price": 15.00,
-  "image": "/assets/summer-watercolor-painting.jpg",
-  "description": "Nice looking office light, perfect for dark offices."
-}, {
-  "url": "/assets/products.json",
-  "id": "dawn",
-  "name": "dawn",
-  "price": 15.00,
-  "image": "/assets/dreamy-abstract-watercolor-landscape-painting.jpg",
-  "description": "Nice looking office light, perfect for dark offices."
+  "image": "/assets/kaleido-alt.jpg",
+  "description": "Perfect desk for the home, a standing desk has been proven to be a good way to stay in shape while working on a computer"
 }]

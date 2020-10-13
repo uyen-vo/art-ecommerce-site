@@ -1,32 +1,41 @@
-<div *ngIf="type !== 'horizontal'" class="card main-page">
+<div *ngIf="type !== 'horizontal' && product" class="card main-page">
     <div class="card-image">
         <a [routerLink]="['/products/' + product.id]">
             <img [src]="product.image" />
         </a>
     </div>
     <p class="name">{{ product.name }}</p>
-    <p>${{ product.price }}.00</p>
+    <p>[${{ product.price }}.00]</p>
 </div>
-<div *ngIf="type === 'horizontal'" class="card product-page horizontal">
+<div *ngIf="type === 'horizontal' && product" class="card product-page horizontal">
     <div class="card-image">
         <img class="materialboxed" [src]="product.image" />
+        <!-- <ngx-gallery [options]="galleryOptions" [images]="galleryImages"></ngx-gallery> -->
+
     </div>
     <div class="description">
         <p class="name">{{ product.name }}</p>
         <p>${{ product.price }}.00</p>
         <p class="quote" *ngIf="product.hasOwnProperty('quote')">{{ product.quote }}</p>
         <p>{{ product.description }}</p>
-        <div>
+        <div id="info">
             <!-- <a [routerLink]="['/products/' + product.id]" *ngIf="!showBuyButton">
                 View product
             </a> -->
-            <select class="browser-default" #sizeSelect (change)="onSizeSelected(sizeSelect.value)">
-                <option value="5x5">5x5</option>
-                <option value="5x7">5x7</option>
-            </select>
-            <input #quantityInput [value]="quantity" (change)="onQuantitySelected(quantityInput.value)">
+            <div class="selector-container">
+                <div class="child">
+                    <select class="browser-default" #sizeSelect (change)="onSizeSelected(sizeSelect.value)">
+                        <option value="5x5">5x5</option>
+                        <option value="5x7">5x7</option>
+                    </select>
+                </div>
 
-
+                <div class="quantity-selector child">
+                    <span (click)="incrementQuantity(false)">-</span>
+                    <input #quantityInput [value]="quantity" (change)="onQuantitySelected(quantityInput.value)">
+                    <span (click)="incrementQuantity(true)">+</span>
+                </div>
+            </div>
             <button class="snipcart-add-item"
                 *ngIf="showBuyButton"
                 data-item-has-taxes-included="true"
