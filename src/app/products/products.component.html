@@ -1,18 +1,19 @@
-<p hidden class="quote">
-    The privilege of art is to express exactly what you feel and to never lose that.
-</p>
+<div class="huh">
+    <p hidden class="quote">
+        The privilege of art is to express exactly what you feel and to never lose that.
+    </p>
 
-<div class="intro"> 
-    <p>Original watercolor paintings</p>
-    <p>Archival quality giclée prints</p>
-    <p>Square prints up to 16 inches</p>
-    <p>$5.00 flat rate shipping for USA</p>
-</div>
-
-    
-<div class="products-list">
-    <div *ngFor="let product of products$ | async" class="products-list__item">
-        <app-product-card  [product]="product">
-        </app-product-card>
+    <div class="intro"> 
+        <p>Original watercolor paintings</p>
+        <p>Archival quality giclée prints</p>
+        <p>Custom dimension up to 16 inches</p>
+        <p>$5.00 flat rate shipping for USA</p>
+    </div>
+        
+    <div class="products-list">
+        <div *ngFor="let product of products$ | async" class="products-list__item">
+            <app-product-card  [product]="product">
+            </app-product-card>
+        </div>
     </div>
 </div>
