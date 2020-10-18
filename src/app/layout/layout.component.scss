@@ -5,10 +5,20 @@
   flex-direction:column;
 
 }
+.df {
+  border: 1px solid red;
+}
 .layout {
   &__content {
       flex:1;
+      display: flex;
+      align-items:stretch;
+      margin-top: 70px;
       // border: 1px solid red;
+
+      @media (min-width: $breakpoint-tablet) {
+          margin-top: 0px;
+      }
   }
   &__footer {
       text-align: center;
@@ -29,6 +39,7 @@
 nav {
   box-shadow:none;
   background: white;
+  box-shadow: 0px 0px 15px -2px $dull-grey;
 }
 
 #logo {

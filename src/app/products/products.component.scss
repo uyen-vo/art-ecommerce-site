@@ -3,9 +3,6 @@
 .products-list {
     display: flex;
     flex-wrap: wrap;
-    @media (max-width: $breakpoint-tablet) {
-        margin-top: 30px;
-    }
 
     &__item {
         padding: 20px;
@@ -14,10 +11,6 @@
         @media (min-width: $breakpoint-tablet) {
             width: 50%;
         }
-
-        // @media (min-width: $breakpoint-desktop) {
-        //     width: 50%;
-        // }
     }
 }
 
@@ -29,6 +22,8 @@ p {
 .intro {
     // border: 1px solid black;
     letter-spacing: -.2px;
+    margin-top: 20px;
+    display: none;
 }
 .quote {
     color: $dark-blue;
@@ -36,4 +31,9 @@ p {
     @media (max-width: $breakpoint-tablet) {
         margin-top: 85px;
     }
+}
+
+.huh {
+    height: inherit;
+    border: 1px solid purple;
 }
