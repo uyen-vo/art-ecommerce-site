@@ -7,6 +7,7 @@
     <p class="name">{{ product.name }}</p>
     <p>[${{ product.price }}.00]</p>
 </div>
+
 <div *ngIf="type === 'horizontal' && product" class="card product-page horizontal">
     <div class="card-image">
         <img class="materialboxed" [src]="product.image" />
