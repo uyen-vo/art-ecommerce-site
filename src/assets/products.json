@@ -1,15 +1,18 @@
-[{
-  "url": "/assets/products.json",
-  "id": "kaleido-2",
-  "name": "kaleidoscope 1",
-  "price": 15.00,
-  "image": "/assets/kaleido-5.jpg",
-  "description": "Perfect desk for the home, a standing desk has been proven to be a good way to stay in shape while working on a computer"
-}, {
-  "url": "/assets/products.json",
-  "id": "kaleido-2",
-  "name": "kaleidoscope 2",
-  "price": 15.00,
-  "image": "/assets/kaleido-alt.jpg",
-  "description": "Perfect desk for the home, a standing desk has been proven to be a good way to stay in shape while working on a computer"
-}]
+[
+  {
+    "url": "/assets/products.json",
+    "id": "kaleido-1",
+    "name": "kaleidoscope 1",
+    "price": 15.00,
+    "image": "/assets/kaleido-5.jpg",
+    "description": "Perfect desk for the home, a standing desk has been proven to be a good way to stay in shape while working on a computer"
+  },
+  {
+    "url": "/assets/products.json",
+    "id": "kaleido-2",
+    "name": "kaleidoscope 2",
+    "price": 15.00,
+    "image": "/assets/kaleido-alt.jpg",
+    "description": "Perfect desk for the home, a standing desk has been proven to be a good way to stay in shape while working on a computer"
+  }
+]

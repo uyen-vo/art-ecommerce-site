@@ -13,14 +13,16 @@
 
   &:hover {
     p {
-      color: black;
+      color: white;
+      font-weight: bold;
+      background-color: $hot-pink;
       // transition: .3s ease-in;
     }
     
     .card-image {
       border: 3px solid $hot-pink;
       // box-shadow: 0px 0px 15px -2px $hot-pink;
-      transition: all .3s ease-in-out;
+      // transition: all .3s ease-in-out;
     }
   }
   
