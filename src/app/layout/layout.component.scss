@@ -8,6 +8,7 @@
 .layout {
   &__content {
       flex:1;
+      // border: 1px solid red;
   }
   &__footer {
       text-align: center;
@@ -18,7 +19,7 @@
   color: $dull-grey;
   font-size: 20px;
   // border:1px solid blue;
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Reem Kufi', sans-serif;
 }
 
 .navigation div {
@@ -46,6 +47,21 @@ footer{
   color:black;
 }
 
+.container {
+  // border: 1px solid red;
+  width:90%;
+  max-width: 900px;
+
+  @media screen and (max-width: 950px) {
+    // width: 90%;
+    // min-width: auto;
+    // border:1px solid red;
+  }
+}
+
+.navigation {
+  // border-bottom: 1px solid black;
+}
 
 
 //mobile
@@ -56,13 +72,13 @@ footer{
   width: 100%;
   transition: top 0.3s ease-in-out;
   box-shadow: 0px 0px 15px -2px $dull-grey;
-  display: flex;
+  display: none;
   justify-content: space-between;
   padding-left: 60px;
   padding-right:60px;
   a {
     color: $dull-grey;
-    font-family: 'Work Sans', sans-serif;
+    font-family: 'Reem Kufi', sans-serif;
     font-size:18px;
   }
 
@@ -71,6 +87,7 @@ footer{
   @media (max-width: $breakpoint-tablet) {
     opacity: 100%;
     z-index: 1;
+    display: flex;
   }
 }
 

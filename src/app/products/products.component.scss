@@ -3,8 +3,6 @@
 .products-list {
     display: flex;
     flex-wrap: wrap;
-    margin-top: 50px;
-
     @media (max-width: $breakpoint-tablet) {
         margin-top: 30px;
     }
@@ -17,14 +15,20 @@
             width: 50%;
         }
 
-        @media (min-width: $breakpoint-desktop) {
-            width: 33%;
-        }
+        // @media (min-width: $breakpoint-desktop) {
+        //     width: 50%;
+        // }
     }
 }
 
 p {
     text-align: center;
+    margin: 0; padding: 0;
+}
+
+.intro {
+    // border: 1px solid black;
+    letter-spacing: -.2px;
 }
 .quote {
     color: $dark-blue;
